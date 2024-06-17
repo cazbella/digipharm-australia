@@ -1,0 +1,205 @@
+
+body {
+  background: linear-gradient(rgb(133, 83, 281, 0.5), rgb(109, 129, 285, 0.5));
+}
+
+
+body, h1, h2, h3, h4, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Basic layout */
+.app {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+Header styles
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo img {
+  max-width: 30%;
+  height: auto; 
+}
+
+
+nav {
+  /* margin-left: 20px; */
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  display: flex;
+  justify-content: space-evenly; /* This will distribute the space evenly */
+  align-items: center;
+  width: 100%; /* Ensure the ul takes up all available horizontal space */
+  list-style-type: none;
+  padding: 0;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: rgb(93, 43, 24);
+}
+
+.register-button {
+  background: linear-gradient(rgb(93, 43, 241), rgb(59, 79, 245));
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 4px;
+}
+
+.register-button:hover {
+  background-color: #ff4b4b;
+}
+
+/* Intro section styles */
+.intro {
+  background-color: #f9f9f9;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.intro-content h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.intro-content h2 {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.intro-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.intro-content li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Benefits section styles */
+.benefits {
+  background-color: #fff;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.benefits h3 {
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.benefits-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  border: 1px solid #ddd;
+}
+
+.card h4 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Awards section styles */
+.awards {
+  background-color: #f1f1f1;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.awards h3 {
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.awards ul {
+  list-style: none;
+  padding: 0;
+}
+
+.awards li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Smart contracts section styles */
+.smart-contracts {
+  background-color: #fff;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.smart-contracts h3 {
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.smart-contracts img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
