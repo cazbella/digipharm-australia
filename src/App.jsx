@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css'; 
 import logo from './assets/images/logo.png';
 import Navbar from './layout/Navbar';
-import Hero from './layout/hero/Hero'
+import Hero from './layout/hero/Hero';
+import BenefitsSection from './layout/benefits/Benefits';
 
 const App = () => {
   return (
@@ -49,30 +50,30 @@ const IntroSection = () => (
   </section>
 );
 
-const BenefitsSection = () => (
-  <section id="benefits" className="benefits">
-    <h3>LEARN HOW OUR PLATFORMS CAN BENEFIT YOU – REGISTER YOUR INTEREST</h3>
-    <div className="benefits-cards">
-      <BenefitCard title="Payers" items={[
-        "Share risks and avoid paying for ineffective products or services",
-        "Show intervention effectiveness across multiple settings",
-        "Manage budget impact and cost-effectiveness in real-time",
-      ]} />
-      <BenefitCard title="Providers" items={[
-        "Optimise procurement and resource allocation",
-        "Provide best available therapies for patients",
-        "Collect costs data in real-time",
-        "Simplify value-based procurement",
-      ]} />
-      <BenefitCard title="Manufacturers" items={[
-        "Improve and accelerate access",
-        "Find ways to boost treatment adherence and outcomes",
-        "Show the value of healthcare technology",
-        "Generate RWE for future development",
-      ]} />
-    </div>
-  </section>
-);
+// const BenefitsSection = () => (
+//   <section id="benefits" className="benefits">
+//     <h3>LEARN HOW OUR PLATFORMS CAN BENEFIT YOU – REGISTER YOUR INTEREST</h3>
+//     <div className="benefits-cards">
+//       <BenefitCard title="Payers" items={[
+//         "Share risks and avoid paying for ineffective products or services",
+//         "Show intervention effectiveness across multiple settings",
+//         "Manage budget impact and cost-effectiveness in real-time",
+//       ]} />
+//       <BenefitCard title="Providers" items={[
+//         "Optimise procurement and resource allocation",
+//         "Provide best available therapies for patients",
+//         "Collect costs data in real-time",
+//         "Simplify value-based procurement",
+//       ]} />
+//       <BenefitCard title="Manufacturers" items={[
+//         "Improve and accelerate access",
+//         "Find ways to boost treatment adherence and outcomes",
+//         "Show the value of healthcare technology",
+//         "Generate RWE for future development",
+//       ]} />
+//     </div>
+//   </section>
+// );
 
 const BenefitCard = ({ title, items }) => (
   <div className="card">
