@@ -1,12 +1,17 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import RegisterButton from '../register_button/RegisterButton';
+import './Benefits.css';
 
 const BenefitsSection = () => (
-  <section id="benefits" className="benefits" style={{ margin: '20px', borderRadius: '15px', overflow: 'hidden', backgroundColor: '#f8f9fa' }}>
+  <section id="benefits" className="benefits">
     <Container>
-      <h3>LEARN HOW OUR PLATFORMS CAN BENEFIT YOU – REGISTER YOUR INTEREST</h3>
-      <Row>
-        <Col md={4}>
+      <h3 className='benefits-title'>LEARN HOW OUR PLATFORMS CAN BENEFIT YOU</h3>
+      <div className="button-container">
+        <RegisterButton style={{ marginBottom: '20px' }} />
+      </div>
+      <Row className='cards justify-content-center'>
+        <Col md={4} xs={12} className="d-flex">
           <BenefitCard
             title="Payers"
             items={[
@@ -16,7 +21,7 @@ const BenefitsSection = () => (
             ]}
           />
         </Col>
-        <Col md={4}>
+        <Col md={4} xs={12} className="d-flex">
           <BenefitCard
             title="Providers"
             items={[
@@ -27,7 +32,7 @@ const BenefitsSection = () => (
             ]}
           />
         </Col>
-        <Col md={4}>
+        <Col md={4} xs={12} className="d-flex">
           <BenefitCard
             title="Manufacturers"
             items={[
@@ -44,8 +49,8 @@ const BenefitsSection = () => (
 );
 
 const BenefitCard = ({ title, items }) => (
-  <Card style={{ margin: '10px', borderRadius: '10px', overflow: 'hidden' }}>
-    <Card.Body>
+  <Card className="card">
+    <Card.Body className="card-body">
       <Card.Title>{title}</Card.Title>
       <ul>
         {items.map((item, index) => <li key={index}>{item}</li>)}
