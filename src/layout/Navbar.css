@@ -4,14 +4,13 @@
     
 }
 
-/* Add this CSS to your Navbar.css file */
 .nav-links {
-    font-family: 'Aloja', c ; /* Specify the font family */
+    font-family: 'Aloja', c ; /* font family */
     font-size: larger;
   }
 
   #basic-nav-dropdown {
-    font-family: 'Aloja', c ; /* Specify the font family */
+    font-family: 'Aloja', c ; /* font family */
     font-size: larger;
   }
 
@@ -19,3 +18,16 @@
     margin-right: 20px;
   }
   
+  /* src/components/Navbar.css */
+.navbar-logo {
+  max-width: 270px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .navbar-logo {
+      max-width: 150px; /* Adjust this value as needed */
+  }
+}

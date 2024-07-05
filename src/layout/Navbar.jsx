@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import logo from '../assets/images/logo.png';
 import './Navbar.css';
+import RegisterButton from './register_button/RegisterButton';
 
 const Header = () => {
     return (
@@ -9,7 +10,7 @@ const Header = () => {
             <Container fluid style={{ borderRadius: '15px', overflow: 'hidden', backgroundColor: '#fff' }}>
                 <Navbar expand="lg" className="bg-body-tertiary navbar">
                     <Navbar.Brand href="#home">
-                        <img src={logo} alt="DigiPharm Australia" style={{ maxWidth: '270px', marginTop: '10px', marginBottom: '10px' }} />
+                        <img src={logo} alt="DigiPharm Australia" className="navbar-logo" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -19,7 +20,7 @@ const Header = () => {
                             <Nav.Link href="#awards" className="me-5">Awards</Nav.Link>
                             <Nav.Link href="#smart-contracts" className="me-5">Smart Contracts</Nav.Link>
                         </Nav>
-                        <button className="register-button ms-auto">Register your interest</button>
+                        <RegisterButton />
                     </Navbar.Collapse>
                 </Navbar>
             </Container>
